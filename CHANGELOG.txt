@@ -1,0 +1,28 @@
+/**
+ * Changelog
+ *
+ * @package    Kandanda Birthdays
+ *
+ * @author     Heinl Christian <heinchrs@gmail.com>
+ * @copyright  (C) 2015-2021 Heinl Christian
+ * @license    GNU General Public License version 2 or later
+ */
+
+/**
+ * + Addition
+ * ! Removal
+ * ^ Change
+ * # Fix
+ */
+
+20-Jan-2013 : v2.5.0
+ + First release
+
+20-Jan-2013 : v2.0.1
+ + Test
+
+14-Mar-2021 : v1.0.1
+ + Configuration added to exclude specific Kandanda groups from relevant birthdays
+
+20-Jan-2013 : v1.0.0
+ + First release

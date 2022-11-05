@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="module" client="site" method="upgrade">
+	<name>Kandanda Birthdays</name>
+	<creationDate>13-Mar-2021</creationDate>
+	<author>Heinl Christian</author>
+	<authorEmail>heinchrs@gmail.com</authorEmail>
+	<authorUrl/>
+	<copyright>Heinl Christian, 2021</copyright>
+	<license>GNU / GPL V3</license>
+	<version>1.0.1</version>
+		<description>MOD_KANDANDA_BIRTHDAYS_DESCRIPTION</description>
+	<files folder="site">
+		<folder>language</folder>
+		<folder>tmpl</folder>
+		<filename>CHANGELOG.php</filename>
+		<filename>CHANGELOG.txt</filename>
+		<filename >helper.php</filename>
+		<filename >script.install.php</filename>
+		<filename>index.html</filename>
+		<filename module="mod_kandanda_birthdays">mod_kandanda_birthdays.php</filename>
+	</files>
+	<params/>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="anzahl_geburtstage" type="number" default="5" min="1" label="MOD_KANDANDA_BIRTHDAYS_COUNT_LABEL" description="MOD_KANDANDA_BIRTHDAYS_COUNT_DESC"></field>
+				<field name="nur_geburtstage_von_monat" type="radio" label="MOD_KANDANDA_BIRTHDAYS_PER_MONTH_LABEL" description="MOD_KANDANDA_BIRTHDAYS_PER_MONTH_DESC" default="0">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="anzahl_tage_in_zukunft" type="number" min="0" default="30" label="MOD_KANDANDA_BIRTHDAYS_DAYS_IN_FUTURE_LABEL" description="MOD_KANDANDA_BIRTHDAYS_DAYS_IN_FUTURE_DESC"></field>
+				<field name="load_css" type="radio" label="MOD_KANDANDA_BIRTHDAYS_LOAD_CSS_LABEL" description="MOD_KANDANDA_BIRTHDAYS_LOAD_CSS_DESC" default="1">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="kandanda_groups" type="sql" label="MOD_KANDANDA_BIRTHDAYS_GROUP_LABEL" description="MOD_KANDANDA_BIRTHDAYS_GROUP_DESC" default="" query="SELECT id,title FROM #__categories WHERE extension = 'com_kandanda.ma.member' AND level = 2" key_field="id" value_field="title" size="5" multiple="true" />
+				<field name="@spacer" type="spacer" default="" label="" description="" />
+				<field name="moduleclass_sfx" type="text" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+				<field name="debug" type="radio" label="MOD_KANDANDA_BIRTHDAYS_DEBUG_LABEL" description="MOD_KANDANDA_BIRTHDAYS_DEBUG_DESC" default="0">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+	<updateservers>
+		<server type="extension" name="Kandanda Birthday" priority="1">https://raw.githubusercontent.com/heinchrs/mod_kandanda_birthdays/main/.release/mod_kandanda_birthdays_update.xml</server>
+	</updateservers>
+	<scriptfile>script.install.php</scriptfile>
+</extension>
