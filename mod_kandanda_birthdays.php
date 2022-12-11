@@ -26,7 +26,7 @@ if (JComponentHelper::isEnabled('com_kandanda', true))
 	// Include CSS
 	if ($params->get('load_css') == 1)
 	{
-		JHTML::stylesheet('mod_kandanda_birthdays.css', 'media/mod_kandanda_birthdays/css/');
+		JHTML::_('stylesheet', 'media/mod_kandanda_birthdays/css/mod_kandanda_birthdays.css');
 	}
 }
 else

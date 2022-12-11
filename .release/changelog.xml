@@ -15,4 +15,12 @@
 			<item>Configuration added to exclude specific Kandanda groups from relevant birthdays</item>
 		</addition>
 	</changelog>
+	<changelog>
+		<element>mod_kandanda_birthdays</element>
+		<type>module</type>
+		<version>1.0.2</version>
+		<change>
+			<item>Loading of module specific CSS file adapted</item>
+		</change>
+	</changelog>
 </changelogs>

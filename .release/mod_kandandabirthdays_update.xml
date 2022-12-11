@@ -25,4 +25,18 @@
 		<targetplatform name="joomla" version=".*" />
 		<client>0</client>
 	</update>
+    <update>
+		<name>Kandanda Birthdays</name>
+		<description>Module for displaying comming birthdays of Kandanda members.</description>
+		<element>mod_kandanda_birthdays</element>
+		<type>module</type>
+		<version>1.0.2</version>
+		<changelogurl>https://raw.githubusercontent.com/heinchrs/mod_kandanda_birthdays/main/.release/changelog.xml</changelogurl>
+		<downloads>
+			<downloadurl type="full" format="zip">https://raw.githubusercontent.com/heinchrs/mod_kandandabirthdays/main/.release/mod_kandanda_birthdays-v1.0.2.zip</downloadurl>
+		</downloads>
+		<targetplatform name="joomla" version=".*" />
+		<client>0</client>
+	</update>	
+	
 </updates>

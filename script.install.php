@@ -73,7 +73,7 @@ class Mod_Kandanda_BirthdaysInstallerScript
 
 	/**
 	 * The joomla main version
-	 * @var int
+	 * @var integer
 	 */
 	private $jversion               = null;
 
@@ -120,11 +120,13 @@ class Mod_Kandanda_BirthdaysInstallerScript
 			$this->installType = 'update';
 		}
 
-		//print("Installed XML file: " . $this->getInstalledXMLFile());
-		//print("<br>Installed version: " . $this->installedVersion);
-		//print("<br>Installed: " . $this->installType);
-		//print("<br>dir: " . $this->dir);
-		//die();
+		/*
+		print("Installed XML file: " . $this->getInstalledXMLFile());
+		print("<br>Installed version: " . $this->installedVersion);
+		print("<br>Installed: " . $this->installType);
+		print("<br>dir: " . $this->dir);
+		// die();
+		*/
 
 		return true;
 	}
@@ -285,7 +287,10 @@ class Mod_Kandanda_BirthdaysInstallerScript
 			$changelog = str_replace($match[0], "\n", $changelog);
 		}
 		print("<pre>");
-		print_r($changelog);die();
+		print_r($changelog);
+		/*
+		die();
+		*/
 
 		$changelog = preg_replace(
 			"#(\n+)([0-9]+.*?) : v([0-9\.]+(?:-dev[0-9]*)?)([^\n]*?\n+)#",
@@ -294,7 +299,6 @@ class Mod_Kandanda_BirthdaysInstallerScript
 			. '\4<pre>',
 			$changelog
 		) . '</pre>';
-
 
 		$changelog = preg_replace(
 			'#\[J([1-9][\.0-9]*)\]#',

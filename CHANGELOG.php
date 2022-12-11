@@ -37,6 +37,10 @@ function CHANGELOG()
 	 *
 	 * **********************************************
 	 *
+	 * Version 1.0.2
+	 *  11-dec-2022 Heinl Christian
+	 * ^ Loading of module specific CSS file adapted
+	 *
 	 * Version 1.0.1
 	 * 14-Mar-2021 Heinl Christian
 	 * + Configuration added to exclude specific Kandanda groups from relevant birthdays

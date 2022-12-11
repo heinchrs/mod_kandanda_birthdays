@@ -15,11 +15,8 @@
  * # Fix
  */
 
-20-Jan-2013 : v2.5.0
- + First release
-
-20-Jan-2013 : v2.0.1
- + Test
+11-dec-2022 : v1.0.2
+ ^ Loading of module specific CSS file adapted
 
 14-Mar-2021 : v1.0.1
  + Configuration added to exclude specific Kandanda groups from relevant birthdays
